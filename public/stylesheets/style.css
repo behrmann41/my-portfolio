@@ -1,9 +1,16 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url('/images/bg.jpg')
+  position: relative;
 }
 
 a {
   color: #00B7FF;
+}
+
+p {
+  font-size: 18px;
+}
+
+#intro {
+  background: url('../images/intro-bg.jpeg')
 }
