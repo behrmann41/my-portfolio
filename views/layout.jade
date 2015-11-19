@@ -4,7 +4,7 @@ html
     title Home | Ian Behrmann
     link(rel='stylesheet', href='https://bootswatch.com/paper/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+  body#home(data-spy="scroll" data-target=".navbar")
     nav.navbar.navbar-default.navbar-fixed-top
       .container
         // Brand and toggle get grouped for better mobile display
@@ -14,16 +14,16 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='/') Ian Behrmann
+          a.navbar-brand(href='#home') Ian Behrmann
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li
-              a(href='#') Home
+              a(href='#home') Home
             li
-              a(href='#') Portfolio
+              a(href='#portfolio') Portfolio
             li
-              a(href='#') Contact
+              a(href='#contact') Contact
 
     block content
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
