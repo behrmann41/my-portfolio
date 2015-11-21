@@ -4,12 +4,13 @@ html
     title Home | Ian Behrmann
     link(rel='stylesheet', href='https://bootswatch.com/paper/bootstrap.min.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body#home(data-spy="scroll" data-target=".navbar")
     nav.navbar.navbar-default.navbar-fixed-top
       .container
         // Brand and toggle get grouped for better mobile display
-        .navbar-header
+        .navbar-header.page-scroll
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
             span.sr-only Toggle navigation
             span.icon-bar
@@ -19,11 +20,11 @@ html
         // Collect the nav links, forms, and other content for toggling
         #navbar-collapse.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
-            li
+            li.page-scroll
               a(href='#home') Home
-            li
+            li.page-scroll
               a(href='#portfolio') Portfolio
-            li
+            li.page-scroll
               a(href='#contact') Contact
 
     block content
