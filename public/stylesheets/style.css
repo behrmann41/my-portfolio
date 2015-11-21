@@ -18,6 +18,14 @@ p {
   font-size: 18px;
 }
 
+.navbar {
+  border-bottom: 0;
+  background: #FFFFFF
+  -webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
+  transition: background .3s ease-in-out,padding .3s ease-in-out;
+}
+
 .home {
   display: table;
   width: 100%;

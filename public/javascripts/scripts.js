@@ -1,4 +1,16 @@
 $(document).ready(function(){
+  var nav = $('.navbar');
+  $(window).on('scroll', function() {
+    if ($(".navbar").offset().top > 50) {
+      nav.css( 'background-color', 'transparent');
+    } else {
+      nav.css( 'background-color', '#FFFFFF');
+    }
+  });
+  function scrollToAnchor(id){
+    var $el = $(id);
+    $('html,body').animate({scrollTop: $el.offset().top},2000);
+  }
     $("li.page-scroll a").click(function(e) {
       e.preventDefault();
       scrollToAnchor($(e.target).attr('href'));
@@ -6,11 +18,5 @@ $(document).ready(function(){
     $('.pull-down').each(function() {
       $(this).css('margin-top', $(this).parent().height()-
     $(this).height())
-    });
-    $('#projects').click(function (e) {
-      e.preventDefault()
-      var next = $('.active').next().length > 0 ? $('.active').next() : $('.nav li').first();
-      console.log(next)
-      scrollToAnchor($(next).attr('href'));
     });
 })
