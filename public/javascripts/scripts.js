@@ -23,3 +23,17 @@ $(document).ready(function(){
   $(this).height())
   });
 })
+
+// var btn = $('#projects')
+// $("window").on('scroll', function(){
+//   btn.css('background', 'transparent')
+// })
+// // $('#projects').click(function(e){
+// //   var $list = $('#home','#portfolio','#contact');
+// //   e.preventDefault();
+// //   console.log($list, "LIST")
+// //   var i = $(".active").removeClass('.active').next().index();
+// //   if(i==-1) i=0;
+// //   $list.eq(i).addClass('.active')
+// //   // console.log($list)
+// // })

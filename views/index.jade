@@ -3,19 +3,91 @@ extends layout
 block content
   section#home.home
     .container
-      h2 Hello 
-      p My Name is Ian Behrmann, and I develop web applications!
-    .container
-      p I love developing complex back-end solutions, with the end goal of detailed data visualization.  Visualizing data in a world where it is constantly available, and constantly changing - motivates me to improve and find new ways to express myself.
-    .page-scroll
-      .row-fluid
-        span.pull-down
-          button#projects.btn.btn-default.btn-lg.glyphicon.glyphicon-triangle-bottom
+      .row 
+        .col-md-6.intro
+          h2.black Hello 
+          p My Name is Ian Behrmann, and I develop web applications!
+          p I love developing complex back-end solutions, with the end goal of detailed data visualization.  Visualizing data in a world where it is constantly available, and constantly changing - motivates me to improve and find new ways to express myself.
+
+          h2.black About me
+          p A Colorado native, and an avid snowboarder.  I love being outdoors but am also thrilled and intrigued by the progression of video game technology.
+        .col-md-6.personal
+          img(src='/images/headshot.jpg')
+    //- .page-scroll
+    //-   .row-fluid
+    //-     span.pull-down
+    //-       button#projects.btn.btn-default.glyphicon.glyphicon-triangle-bottom
 
   section#portfolio.portfolio
     .container
-      p hello
-    .container
-      p projects here
-
+      .portfolio-section
+        .row
+          .col-md-10.col-md-offset-1
+            h4.text-center.white A couple of the projects I have been working. Galvanize capstone project coming soon...
+        .row.margin-top
+          .col-md-6
+            figure.portfolio-img
+              img.img-responsive(src="/images/colorado-disc.png")
+              figcaption
+                a.margin-left(href="#") Colorado-Disc Site
+            h4.margin-top.text-center.white An application for Colorado Disc Golf players to help manage their progress and track scores with d3 visualizatoin.
+          .col-md-6
+            figure.portfolio-img
+              img.img-responsive(src="/images/grafique.png")
+              figcaption.hover-mask
+                a.margin-left(href="https://grafique.cfapps.io/") D3 Pie Chart Generator
+            h4.margin-top.text-center.white A single page Angular app that allows you to dynamicly generate pie charts and export the corresponding d3 code snippet.
+  section#skills.skills
+      h2.text-center.padding-top.white DEVELOPMENT SKILLS
+      .wrapper
+        .row.skills-list
+          .col-md-3
+            h3.white FRONT-END
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm jQuery
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm AJAX
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm JavaScript
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm Angular
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm CSS3
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm HTML5
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm Bootstrap
+          .col-md-3
+            h3.white BACK-END
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm Express
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm NodeJS
+          .col-md-3
+            h3.white DATABASE
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm MongoDB
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm PostgreSQL
+          .col-md-3
+            h3.white GENERAL
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm Test Driven Development
+            i.glyphicon.glyphicon-chevron-right.text-primary.block
+              span.white.margin-left-sm Git/Github
   section#contact.contact
+    .container
+      .contact-section
+        h1.text-center CONTACT ME
+        .row
+          .col-md-6.col-md-offset-3
+            h3.text-center ianjbehrmann@gmail.com
+            .icons.text-center
+              a(href="https://gmail.com")
+                i(class='glyphicon glyphicon-envelope')
+              a(href="https://github.com/behrmann41")
+                i(class="fa fa-github")
+              a(href="https://twitter.com/ijb41")
+                i(class="fa fa-twitter")
+              a(href="https://www.linkedin.com/in/ianjbehrmann")
+                i(class="fa fa-linkedin")
