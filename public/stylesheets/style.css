@@ -1,5 +1,6 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
   width: 100%;
   height: 100%;
   position: relative;
@@ -45,11 +46,28 @@ h3{
     color: #000000;
 }
 
+.padding-top {
+  padding-top: 80px;
+}
+
 .home {
-  display: table;
   width: 100%;
   height: 100%;
-  padding: 100px 0;
+  display: block;
+  position: relative;
+}
+.home::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.25;
+  position: absolute;
+  z-index: -1;
   color:#454545;
   background: url('../images/intro-bg.jpg') no-repeat center center scroll;
   background-color: #000;
@@ -60,7 +78,7 @@ h3{
 }
 
 .intro {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 /*.personal {
@@ -73,11 +91,26 @@ h3{
   box-shadow: 5px 5px 10px #333;
 }*/
 
+
 .portfolio {
-  display: table;
   width: 100%;
   height: 100%;
-  padding: 100px 0;
+  display: block;
+  position: relative;
+}
+.portfolio::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.6;
+  position: absolute;
+  z-index: -1;
+  padding: 200px 0;
   color: #454545;
   background: url('../images/portfolio-bg.jpeg') no-repeat center center scroll;
   background-color: #000;
@@ -88,9 +121,23 @@ h3{
 }
 
 .skills {
-  display: table;
   width: 100%;
   height: 100%;
+  display: block;
+  position: relative;
+}
+.skills::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.7;
+  position: absolute;
+  z-index: -1;
   padding: 100px 0;
   color: rgba(255,255,255,0.7);
   background: url('../images/skills-bg.jpg') no-repeat center center scroll;
@@ -117,11 +164,24 @@ h3{
   margin: 5px;
   padding-top: 20px;
 }
-
 .contact {
-  display: table;
   width: 100%;
   height: 100%;
+  display: block;
+  position: relative;
+}
+.contact::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.6;
+  position: absolute;
+  z-index: -1;
   padding: 100px 0;
   color: rgba(255,255,255,0.7);
   background: url('../images/diagram-bg.jpeg') no-repeat center center scroll;
@@ -157,9 +217,9 @@ i, i.fa {
   margin: 15px;
 }
 
-#projects {
+/*#projects {
   vertical-align: bottom;
-}
+}*/
 
 figure.portfolio-img{
   -moz-box-shadow: 5px 5px 10px #333;
