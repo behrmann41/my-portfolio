@@ -1,5 +1,6 @@
 $(document).ready(function(){
   var nav = $('.navbar');
+
   $(window).on('scroll', function() {
     if ($(".navbar").offset().top > 50) {
       nav.css( 'background-color', 'transparent');
@@ -8,21 +9,21 @@ $(document).ready(function(){
     }
   });
 
-  function scrollToAnchor(id){
-      var $el = $(id);
-      $('html,body').animate({scrollTop: $el.offset().top},1000);
-  }
-
-  $("li.page-scroll a").click(function(e) {
+  $("li.page-scroll a[href^='#']").click(function(e) {
     e.preventDefault();
-    scrollToAnchor($(e.target).attr('href'));
+    var hash = this.hash;
+    $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 1000, function(){
+       window.location.hash = hash;
+     });
   });
 
-  $('.pull-down').each(function() {
-    $(this).css('margin-top', $(this).parent().height()-
-  $(this).height())
-  });
 })
+// $('.pull-down').each(function() {
+//   $(this).css('margin-top', $(this).parent().height()-
+// $(this).height())
+// });
 
 // var btn = $('#projects')
 // $("window").on('scroll', function(){
