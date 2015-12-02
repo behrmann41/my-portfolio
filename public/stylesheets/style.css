@@ -82,6 +82,10 @@ h3{
   padding-top: 60px;
 }
 
+.margin-top {
+  margin-top: 30px;
+}
+
 /*.personal {
   padding: 200px 225px;
 }
@@ -114,9 +118,9 @@ h3{
   position: absolute;
   z-index: -1;
   padding: 200px 0;
-  color: #454545;
-  background: url('../images/portfolio-bg.jpeg') no-repeat center center scroll;
-  background-color: #000;
+  color: #000;
+  /*background: url('../images/portfolio-bg.jpeg') no-repeat center center scroll;*/
+  background-color: #FFF;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
